@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24AC523D-4B2F-4B0F-8E95-BE1E1E343DD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MultiplayerLib</RootNamespace>
+    <AssemblyName>Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DominationPlate.cs" />
+    <Compile Include="Flag.cs" />
+    <Compile Include="FlagPlace.cs" />
+    <Compile Include="FunctionalObjects\HarmfulObject.cs" />
+    <Compile Include="GameClasses\Arbalester.cs" />
+    <Compile Include="GameClasses\Berserker.cs" />
+    <Compile Include="GameClasses\Bowman.cs" />
+    <Compile Include="GameClasses\Knight.cs" />
+    <Compile Include="GameClasses\Mage.cs" />
+    <Compile Include="GameClasses\Player.cs" />
+    <Compile Include="GameClasses\Thief.cs" />
+    <Compile Include="GameClasses\Warrior.cs" />
+    <Compile Include="GameModes\TeamDeathMatch.cs" />
+    <Compile Include="GravityInfluencedObject.cs" />
+    <Compile Include="Particles\BloodArrowParticle.cs" />
+    <Compile Include="Particles\BloodSlashParticle.cs" />
+    <Compile Include="Particles\DustParticle.cs" />
+    <Compile Include="Particles\Explosion.cs" />
+    <Compile Include="Particles\FireballExplosion.cs" />
+    <Compile Include="Particles\FireBurst.cs" />
+    <Compile Include="Particles\LastFrameDieParticle.cs" />
+    <Compile Include="Particles\Particle.cs" />
+    <Compile Include="Particles\ScoreUpParticle.cs" />
+    <Compile Include="Particles\TombstoneCrush.cs" />
+    <Compile Include="PlayerDamageStats.cs" />
+    <Compile Include="Projectiles\ArbalestSmash.cs" />
+    <Compile Include="Projectiles\Arrow.cs" />
+    <Compile Include="Projectiles\AxeSlash.cs" />
+    <Compile Include="Projectiles\Bolt.cs" />
+    <Compile Include="GameController.cs" />
+    <Compile Include="GameClasses\OldPlayer.cs" />
+    <Compile Include="Projectiles\DaggerSlash.cs" />
+    <Compile Include="Projectiles\ExplosionDamageable.cs" />
+    <Compile Include="Projectiles\Fireball.cs" />
+    <Compile Include="Projectiles\Knife.cs" />
+    <Compile Include="Projectiles\Melon.cs" />
+    <Compile Include="Projectiles\OldProjectile.cs" />
+    <Compile Include="Projectiles\PoisonedArrow.cs" />
+    <Compile Include="Projectiles\Projectile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FunctionalObjects\SolidObject.cs" />
+    <Compile Include="Skull.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="Projectiles\SwordSlash.cs" />
+    <Compile Include="StatueHarvester.cs" />
+    <Compile Include="Tilemap.cs" />
+    <Compile Include="Tombstone.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
