@@ -1205,7 +1205,7 @@ namespace MultiplayerLib
                         {
                             if (isKeyDown)
                             {
-                                if (p.Name.ToLower() == "pif")
+                                if (p.Name.ToLower() == "pifpaf")
                                 {
                                     foreach (Projectile pr in projectiles)
                                     {

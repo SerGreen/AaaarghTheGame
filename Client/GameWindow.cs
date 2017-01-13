@@ -398,7 +398,7 @@ namespace Client
             }
             catch (SocketException e)
             {
-                MessageBox.Show(e.Message + "\nDAMN!!! GETTING OUTTA HERE!!!11", "AAAAAAAARRRGGGHHHH!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message + "\nDAMN!!! LETS GET OUTTA HERE!!!11", "AAAAAAAARRRGGGHHHH!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 joined = false;
                 Application.Exit();
             }
@@ -441,18 +441,18 @@ namespace Client
 
         private void render()
         {
-            Bitmap bmp = new Bitmap(camera.Width, camera.Height);   //surface to render
+            Bitmap bmp = new Bitmap(camera.Width, camera.Height);   //surface to render on
             Graphics g = Graphics.FromImage(bmp);
-            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;   //without this scaling will be soapy
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;   //without this scaling will be blurry
 
             paintBackground(g);            
             
             g.Dispose();
             g = Graphics.FromImage(bmp);
 
-            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;                   //without this scaling will be soapy
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;                   //without this scaling will be blurry
             g.SetClip(new RectangleF(player.X + camera.X, player.Y + camera.Y, camera.Width, camera.Height));   //not sure if neccessary, but probably cuts render area
-            g.TranslateClip(-player.X - camera.X, -player.Y - camera.Y);                                        //needed with upper row
+            g.TranslateClip(-player.X - camera.X, -player.Y - camera.Y);                                        //needed with upper line
             g.TranslateTransform((int) (-player.X - camera.X - 50), (int) (-player.Y - camera.Y - 30));         //move surface to follow player with camera
 
             /*
@@ -462,7 +462,7 @@ namespace Client
 
             foreach (Projectile pr in controller.getProjectiles())
             {
-                if (pr != null)                                         //pretty stupid thing, but it may crash without this, 'cause "lock" statement seems does nothing in C# =\
+                if (pr != null)                                         //pretty stupid thing, but it may crash without this
                 {
                     //if (!(pr is Fireball) || player.Dead || player is Mage)
                         paintProjectiles(g, pr);
@@ -525,7 +525,7 @@ namespace Client
             
             g.Dispose();
             g = Graphics.FromImage(bmp);
-            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;   //without this scaling will be soapy
+            g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;   //without this scaling will be blurry
 
             if (player.Dead)
             {
@@ -657,9 +657,9 @@ namespace Client
 
             g.FillRectangle(teamBrush, shiftX, shiftY, 430, 100);
             if (winner >= 0)
-                g.DrawString((winner + 1) + " TEAM WIN " + param + "!", font32, brushWhite, shiftX + 20, shiftY + 20);
+                g.DrawString((winner + 1) + " TEAM WINS " + param + "!", font32, brushWhite, shiftX + 20, shiftY + 20);
             else
-                g.DrawString(param + " DRAW...", font32, brushBlack, shiftX + 80, shiftY + 20);
+                g.DrawString(param + " IS A DRAW...", font32, brushBlack, shiftX + 40, shiftY + 20);
 
             g.FillRectangle(teamBrush, camera.Width / 2 - controller.RestartRoundTime / 2, camera.Height - 12, controller.RestartRoundTime, 6);
         }
@@ -725,7 +725,7 @@ namespace Client
 
         private void paintPlayer(Graphics g, Player p)
         {
-            //taking player coords, without that they seems to change during drawing and gaps appears
+            //taking player coords, without that they may change during drawing and pixel-gaps appear
             float pX = p.X;
             float pY = p.Y;
 
@@ -739,7 +739,7 @@ namespace Client
                     drake.x += 6 * p.face;
                 drake.paint(g, p.face, 1);
             }
-            if (p.Name == "SerGreeny")
+            if (p.Name == "SerGreen")
             {
                 glasses.x = pX;
                 glasses.y = pY + 10;
@@ -1075,7 +1075,7 @@ namespace Client
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message + "\nGOD DANG IT!!!", "WRAAAAAAAGGGHHHH!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(e.Message + "\nGOD DAMN IT!!!", "WRAAAAAAAGGGHHHH!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return p;

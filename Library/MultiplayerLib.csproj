@@ -66,7 +66,6 @@
     <Compile Include="GameClasses\Player.cs" />
     <Compile Include="GameClasses\Thief.cs" />
     <Compile Include="GameClasses\Warrior.cs" />
-    <Compile Include="GameModes\TeamDeathMatch.cs" />
     <Compile Include="GravityInfluencedObject.cs" />
     <Compile Include="Particles\BloodArrowParticle.cs" />
     <Compile Include="Particles\BloodSlashParticle.cs" />

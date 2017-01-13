@@ -116,14 +116,14 @@ namespace ServerGUI
         {
             int ID = (int) selectedPlayerID.Value;
             if (!controller.respawnPlayer(ID))
-                MessageBox.Show("No such player with given ID", "Successfully failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
+                MessageBox.Show("No player with given ID", "Successfully failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
         }
 
         private void bKick_Click(object sender, EventArgs e)
         {
             int ID = (int)selectedPlayerID.Value;
             if (!controller.kickPlayer(ID))
-                MessageBox.Show("No such player with given ID", "Successfully failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
+                MessageBox.Show("No player with given ID", "Successfully failed", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); 
         }
         
         private void updateTimer_Tick(object sender, EventArgs e)
@@ -167,7 +167,7 @@ namespace ServerGUI
             }
 
             if (mapsListBox.Items.Count == 0)
-                MessageBox.Show("Server did not found any *.map files.");
+                MessageBox.Show("Server did not found any *.map files in ~/res/maps/");
             else
                 mapsListBox.SelectedIndex = 0;
         }
@@ -183,7 +183,7 @@ namespace ServerGUI
             //Domination
             //Capture the flag
             //Protect the king
-            //Max combo killer
+            //Harvester
             pointsLimitBox.Items.Clear();
 
             switch (gameModeBox.SelectedIndex)
