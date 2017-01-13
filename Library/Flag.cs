@@ -21,7 +21,7 @@ namespace MultiplayerLib
             : base(0.5f)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Flag, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/flag.png"), 12, 2);
+            sprite = new Sprite(x, y, SpriteIndex.Flag, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/flag.png"), 12, 2);
             this.team = team;
             returnTimeout = -1;
             maxReturnTimeout = 1000;

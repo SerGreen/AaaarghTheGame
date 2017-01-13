@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplayerLib", "Library\MultiplayerLib.csproj", "{24AC523D-4B2F-4B0F-8E95-BE1E1E343DD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B4A137DE-2685-4107-82AC-F4BD45E13AAC}"
@@ -17,6 +19,132 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelEditor", "LevelEditor\LevelEditor.csproj", "{783BCB48-C68D-4B5A-8A7A-2ABB961800B7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{24AC523D-4B2F-4B0F-8E95-BE1E1E343DD3} = {24AC523D-4B2F-4B0F-8E95-BE1E1E343DD3}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "res", "res", "{784ED808-CBF1-413A-9FB0-D8EC231D251D}"
+	ProjectSection(SolutionItems) = preProject
+		res\+1.png = res\+1.png
+		res\+2.png = res\+2.png
+		res\-1.png = res\-1.png
+		res\Aaaaargh!.png = res\Aaaaargh!.png
+		res\arbalest.png = res\arbalest.png
+		res\arbalest_smash.png = res\arbalest_smash.png
+		res\arbalester_jump.png = res\arbalester_jump.png
+		res\arbalester_jump_smack.png = res\arbalester_jump_smack.png
+		res\arbalester_jump_swing.png = res\arbalester_jump_swing.png
+		res\arbalester_reload.png = res\arbalester_reload.png
+		res\arbalester_run.png = res\arbalester_run.png
+		res\arbalester_run_smack.png = res\arbalester_run_smack.png
+		res\arbalester_run_swing.png = res\arbalester_run_swing.png
+		res\arbalester_smack.png = res\arbalester_smack.png
+		res\arbalester_standing.png = res\arbalester_standing.png
+		res\arbalester_swing.png = res\arbalester_swing.png
+		res\arrow.png = res\arrow.png
+		res\axe.png = res\axe.png
+		res\background_0.png = res\background_0.png
+		res\background_1.png = res\background_1.png
+		res\background_10.png = res\background_10.png
+		res\background_11.png = res\background_11.png
+		res\background_2.png = res\background_2.png
+		res\background_3.png = res\background_3.png
+		res\background_4.png = res\background_4.png
+		res\background_5.png = res\background_5.png
+		res\background_6.png = res\background_6.png
+		res\background_7.png = res\background_7.png
+		res\background_8.png = res\background_8.png
+		res\background_9.png = res\background_9.png
+		res\background_dead.png = res\background_dead.png
+		res\background_old.png = res\background_old.png
+		res\berserker_jump.png = res\berserker_jump.png
+		res\berserker_jump_swing.png = res\berserker_jump_swing.png
+		res\berserker_run.png = res\berserker_run.png
+		res\berserker_run_swing.png = res\berserker_run_swing.png
+		res\berserker_standing.png = res\berserker_standing.png
+		res\berserker_swing.png = res\berserker_swing.png
+		res\black_fade.png = res\black_fade.png
+		res\blood_arrow.png = res\blood_arrow.png
+		res\blood_slash.png = res\blood_slash.png
+		res\bolt.png = res\bolt.png
+		res\bow.png = res\bow.png
+		res\bowman_charge.png = res\bowman_charge.png
+		res\bowman_jump.png = res\bowman_jump.png
+		res\bowman_jump_swing.png = res\bowman_jump_swing.png
+		res\bowman_run.png = res\bowman_run.png
+		res\bowman_run_swing.png = res\bowman_run_swing.png
+		res\bowman_standing.png = res\bowman_standing.png
+		res\bowman_swing.png = res\bowman_swing.png
+		res\cauldron.png = res\cauldron.png
+		res\crown.png = res\crown.png
+		res\domination_plates.png = res\domination_plates.png
+		res\drake.png = res\drake.png
+		res\dust.png = res\dust.png
+		res\explosion.png = res\explosion.png
+		res\fire.png = res\fire.png
+		res\fireball.png = res\fireball.png
+		res\fireball_explosion.png = res\fireball_explosion.png
+		res\flag.png = res\flag.png
+		res\flag_place.png = res\flag_place.png
+		res\glasses.png = res\glasses.png
+		res\knife.png = res\knife.png
+		res\knight_jump.png = res\knight_jump.png
+		res\knight_jump_swing.png = res\knight_jump_swing.png
+		res\knight_run.png = res\knight_run.png
+		res\knight_run_swing.png = res\knight_run_swing.png
+		res\knight_standing.png = res\knight_standing.png
+		res\knight_swing.png = res\knight_swing.png
+		res\mage_jump.png = res\mage_jump.png
+		res\mage_jump_swing.png = res\mage_jump_swing.png
+		res\mage_run.png = res\mage_run.png
+		res\mage_run_swing.png = res\mage_run_swing.png
+		res\mage_standing.png = res\mage_standing.png
+		res\mage_swing.png = res\mage_swing.png
+		res\me.png = res\me.png
+		res\melon.png = res\melon.png
+		res\melon_crack.png = res\melon_crack.png
+		res\red_fade.png = res\red_fade.png
+		res\red_fade_blood.png = res\red_fade_blood.png
+		res\skulls.png = res\skulls.png
+		res\skulls_front.png = res\skulls_front.png
+		res\slash.png = res\slash.png
+		res\slash_axe.png = res\slash_axe.png
+		res\slash_dagger.png = res\slash_dagger.png
+		res\statue.png = res\statue.png
+		res\sword.png = res\sword.png
+		res\teammate.png = res\teammate.png
+		res\thief_jump.png = res\thief_jump.png
+		res\thief_jump_swing.png = res\thief_jump_swing.png
+		res\thief_jump_throw.png = res\thief_jump_throw.png
+		res\thief_run.png = res\thief_run.png
+		res\thief_run_swing.png = res\thief_run_swing.png
+		res\thief_run_throw.png = res\thief_run_throw.png
+		res\thief_standing.png = res\thief_standing.png
+		res\thief_swing.png = res\thief_swing.png
+		res\thief_throw.png = res\thief_throw.png
+		res\tileset.png = res\tileset.png
+		res\tombstone.png = res\tombstone.png
+		res\tombstone_crush.png = res\tombstone_crush.png
+		res\warrior_jump.png = res\warrior_jump.png
+		res\warrior_jump_swing.png = res\warrior_jump_swing.png
+		res\warrior_run.png = res\warrior_run.png
+		res\warrior_run_swing.png = res\warrior_run_swing.png
+		res\warrior_standing.png = res\warrior_standing.png
+		res\warrior_swing.png = res\warrior_swing.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "maps", "maps", "{8AA5E298-47F4-47B0-AE7C-B58FB705231D}"
+	ProjectSection(SolutionItems) = preProject
+		res\maps\map_1.map = res\maps\map_1.map
+		res\maps\map_1.tiles = res\maps\map_1.tiles
+		res\maps\map_2.map = res\maps\map_2.map
+		res\maps\map_2.tiles = res\maps\map_2.tiles
+		res\maps\map_3.map = res\maps\map_3.map
+		res\maps\map_3.tiles = res\maps\map_3.tiles
+		res\maps\map_4.map = res\maps\map_4.map
+		res\maps\map_4.tiles = res\maps\map_4.tiles
+		res\maps\map_5.map = res\maps\map_5.map
+		res\maps\map_5.tiles = res\maps\map_5.tiles
+		res\maps\map_6.map = res\maps\map_6.map
+		res\maps\map_6.tiles = res\maps\map_6.tiles
 	EndProjectSection
 EndProject
 Global
@@ -44,5 +172,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8AA5E298-47F4-47B0-AE7C-B58FB705231D} = {784ED808-CBF1-413A-9FB0-D8EC231D251D}
 	EndGlobalSection
 EndGlobal

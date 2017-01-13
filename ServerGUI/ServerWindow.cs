@@ -160,14 +160,14 @@ namespace ServerGUI
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             int currentMapToCheck = 1;
 
-            while(File.Exists(assemblyFolder + "/res/maps/map_" + currentMapToCheck + ".map"))
+            while(File.Exists(assemblyFolder + "/../res/maps/map_" + currentMapToCheck + ".map"))
             {
                 mapsListBox.Items.Add("map_" + currentMapToCheck);
                 currentMapToCheck++;
             }
 
             if (mapsListBox.Items.Count == 0)
-                MessageBox.Show("Server did not found any *.map files in ~/res/maps/");
+                MessageBox.Show("Server did not found any *.map files in ~/../res/maps/");
             else
                 mapsListBox.SelectedIndex = 0;
         }

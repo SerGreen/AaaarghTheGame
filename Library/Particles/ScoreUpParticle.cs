@@ -33,7 +33,7 @@ namespace MultiplayerLib.Particles
                 fileName = "+1";
             }
 
-            sprite = new Sprite(x, y, index, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + fileName + ".png"), 22, 1);
+            sprite = new Sprite(x, y, index, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + fileName + ".png"), 22, 1);
         }
     }
 }

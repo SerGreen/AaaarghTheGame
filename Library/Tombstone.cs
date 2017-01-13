@@ -17,7 +17,7 @@ namespace MultiplayerLib
         public Tombstone(float x, float y, int team, int disappearTime) : base(0.5f)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Tombstone, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/tombstone.png"), 26, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Tombstone, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/tombstone.png"), 26, 1);
             sprite.setCollisionBox(8, 28, 10, 4);
             sprite.setFrame(team);
             disappearTimeout = disappearTime;

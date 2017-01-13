@@ -1330,10 +1330,10 @@ namespace MultiplayerLib
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            if (File.Exists(assemblyFolder + "/res/maps/" + mapName + ".map"))
+            if (File.Exists(assemblyFolder + "/../res/maps/" + mapName + ".map"))
             {
                 //load server data
-                StreamReader sr = new StreamReader(assemblyFolder + "/res/maps/" + mapName + ".map");
+                StreamReader sr = new StreamReader(assemblyFolder + "/../res/maps/" + mapName + ".map");
                 string file = sr.ReadToEnd();
                 sr.Close();
 

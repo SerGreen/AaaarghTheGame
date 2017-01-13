@@ -20,17 +20,17 @@ namespace MultiplayerLib.GameClasses
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            stand = new Sprite(0, 0, SpriteIndex.mag_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_standing.png"), 50, 2);
+            stand = new Sprite(0, 0, SpriteIndex.mag_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_standing.png"), 50, 2);
             stand.setCollisionBox(19, 9, 12, 26);
-            run = new Sprite(0, 0, SpriteIndex.mag_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_run.png"), 50, 2);
+            run = new Sprite(0, 0, SpriteIndex.mag_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_run.png"), 50, 2);
             run.setCollisionBox(19, 9, 12, 26);
-            jump = new Sprite(0, 0, SpriteIndex.mag_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_jump.png"), 50, 2);
+            jump = new Sprite(0, 0, SpriteIndex.mag_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_jump.png"), 50, 2);
             jump.setCollisionBox(19, 9, 12, 26);
-            swing = new Sprite(0, 0, SpriteIndex.mag_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_swing.png"), 50, 2);
+            swing = new Sprite(0, 0, SpriteIndex.mag_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_swing.png"), 50, 2);
             swing.setCollisionBox(19, 9, 12, 26);
-            jumpSwing = new Sprite(0, 0, SpriteIndex.mag_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_jump_swing.png"), 50, 2);
+            jumpSwing = new Sprite(0, 0, SpriteIndex.mag_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_jump_swing.png"), 50, 2);
             jumpSwing.setCollisionBox(19, 9, 12, 26);
-            runSwing = new Sprite(0, 0, SpriteIndex.mag_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/mage_run_swing.png"), 50, 2);
+            runSwing = new Sprite(0, 0, SpriteIndex.mag_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/mage_run_swing.png"), 50, 2);
             runSwing.setCollisionBox(19, 9, 12, 26);
 
             weaponChargeLimit = 45;

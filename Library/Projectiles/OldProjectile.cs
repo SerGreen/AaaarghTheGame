@@ -45,25 +45,25 @@ namespace MultiplayerLib
 
             if (type == ProjectyleType.Slash)
             {
-                sprite = new Sprite(x, y, SpriteIndex.Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/slash.png"), 22, 2);
+                sprite = new Sprite(x, y, SpriteIndex.Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/slash.png"), 22, 2);
                 sprite.setCollisionBox(0, 2, 22, 17);
                 this.type = type;
             }
             else if (type == ProjectyleType.Slash_Axe)
             {
-                sprite = new Sprite(x, y, SpriteIndex.Slash_Axe, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/slash_axe.png"), 37, 2);
+                sprite = new Sprite(x, y, SpriteIndex.Slash_Axe, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/slash_axe.png"), 37, 2);
                 sprite.setCollisionBox(1, 4, 34, 20);
                 this.type = type;
             }
             else if (type == ProjectyleType.Arrow)
             {
-                sprite = new Sprite(x, y, SpriteIndex.Arrow, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arrow.png"), 21, 2);
+                sprite = new Sprite(x, y, SpriteIndex.Arrow, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arrow.png"), 21, 2);
                 sprite.setCollisionBox(0, 1, 21, 1);
                 this.type = type;
             }
             else if (type == ProjectyleType.Bolt)
             {
-                sprite = new Sprite(x, y, SpriteIndex.Bolt, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bolt.png"), 14, 2);
+                sprite = new Sprite(x, y, SpriteIndex.Bolt, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bolt.png"), 14, 2);
                 sprite.setCollisionBox(0, 1, 14, 1);
                 this.type = type;
             }

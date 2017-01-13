@@ -25,23 +25,23 @@ namespace MultiplayerLib.GameClasses
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            stand = new Sprite(0, 0, SpriteIndex.thi_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_standing.png"), 50, 2);
+            stand = new Sprite(0, 0, SpriteIndex.thi_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_standing.png"), 50, 2);
             stand.setCollisionBox(19, 9, 12, 26);
-            run = new Sprite(0, 0, SpriteIndex.thi_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_run.png"), 50, 2);
+            run = new Sprite(0, 0, SpriteIndex.thi_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_run.png"), 50, 2);
             run.setCollisionBox(19, 9, 12, 26);
-            jump = new Sprite(0, 0, SpriteIndex.thi_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_jump.png"), 50, 2);
+            jump = new Sprite(0, 0, SpriteIndex.thi_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_jump.png"), 50, 2);
             jump.setCollisionBox(19, 9, 12, 26);
-            swing = new Sprite(0, 0, SpriteIndex.thi_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_swing.png"), 50, 2);
+            swing = new Sprite(0, 0, SpriteIndex.thi_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_swing.png"), 50, 2);
             swing.setCollisionBox(19, 9, 12, 26);
-            jumpSwing = new Sprite(0, 0, SpriteIndex.thi_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_jump_swing.png"), 50, 2);
+            jumpSwing = new Sprite(0, 0, SpriteIndex.thi_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_jump_swing.png"), 50, 2);
             jumpSwing.setCollisionBox(19, 9, 12, 26);
-            runSwing = new Sprite(0, 0, SpriteIndex.thi_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_run_swing.png"), 50, 2);
+            runSwing = new Sprite(0, 0, SpriteIndex.thi_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_run_swing.png"), 50, 2);
             runSwing.setCollisionBox(19, 9, 12, 26);
-            throwing = new Sprite(0, 0, SpriteIndex.thi_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_throw.png"), 50, 2);
+            throwing = new Sprite(0, 0, SpriteIndex.thi_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_throw.png"), 50, 2);
             throwing.setCollisionBox(19, 9, 12, 26);
-            jumpThrowing = new Sprite(0, 0, SpriteIndex.thi_Jump_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_jump_throw.png"), 50, 2);
+            jumpThrowing = new Sprite(0, 0, SpriteIndex.thi_Jump_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_jump_throw.png"), 50, 2);
             jumpThrowing.setCollisionBox(19, 9, 12, 26);
-            runThrowing = new Sprite(0, 0, SpriteIndex.thi_Run_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/thief_run_throw.png"), 50, 2);
+            runThrowing = new Sprite(0, 0, SpriteIndex.thi_Run_Throw, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/thief_run_throw.png"), 50, 2);
             runThrowing.setCollisionBox(19, 9, 12, 26);
 
             weaponChargeLimit = 8;

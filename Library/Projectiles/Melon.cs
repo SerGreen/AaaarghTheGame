@@ -18,9 +18,9 @@ namespace MultiplayerLib.Projectiles
             : base(x, y, face, damage, team, ownerID, lifetime, vx, vy, gravity)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Melon, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/melon.png"), 22, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Melon, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/melon.png"), 22, 1);
             sprite.setCollisionBox(1, 1, 20, 20);
-            crack = new Sprite(x, y, SpriteIndex.MelonCrack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/melon_crack.png"), 22, 1);
+            crack = new Sprite(x, y, SpriteIndex.MelonCrack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/melon_crack.png"), 22, 1);
             crack.setCollisionBox(1, 1, 20, 20);
             disarmed = true;
             animationSlowdown = 0;

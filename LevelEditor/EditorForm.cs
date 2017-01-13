@@ -666,7 +666,7 @@ namespace LevelEditor
                 background = new Bitmap(1, 1);
             else
             {
-                background = (Bitmap)Bitmap.FromFile("./res/background_" + (index - 1) + ".png");
+                background = (Bitmap)Bitmap.FromFile("./../res/background_" + (index - 1) + ".png");
             }
         }
 
@@ -712,7 +712,7 @@ namespace LevelEditor
 
             backgroundBox.Items.Add("no background");
 
-            while (File.Exists(assemblyFolder + "/res/background_" + currentBckgrToCheck + ".png"))
+            while (File.Exists(assemblyFolder + "/../res/background_" + currentBckgrToCheck + ".png"))
             {
                 backgroundBox.Items.Add("background_" + currentBckgrToCheck);
                 currentBckgrToCheck++;

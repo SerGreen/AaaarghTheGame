@@ -18,7 +18,7 @@ namespace MultiplayerLib
         public StatueHarvester(float x, float y)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Statue, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/statue.png"), 32, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Statue, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/statue.png"), 32, 1);
             rnd = new Random();
         }
 

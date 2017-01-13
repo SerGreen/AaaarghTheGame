@@ -19,7 +19,7 @@ namespace MultiplayerLib
         public DominationPlate(float x, float y, int teamsAmount)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.DominPlate, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/domination_plates.png"), 64, 1);
+            sprite = new Sprite(x, y, SpriteIndex.DominPlate, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/domination_plates.png"), 64, 1);
             team = -1;
             maxCaptureTime = 50;
             captureTime = new int[teamsAmount];

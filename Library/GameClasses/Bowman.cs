@@ -20,17 +20,17 @@ namespace MultiplayerLib.GameClasses
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            stand = new Sprite(0, 0, SpriteIndex.bow_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_standing.png"), 50, 2);
+            stand = new Sprite(0, 0, SpriteIndex.bow_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_standing.png"), 50, 2);
             stand.setCollisionBox(19, 9, 12, 26);
-            run = new Sprite(0, 0, SpriteIndex.bow_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_run.png"), 50, 2);
+            run = new Sprite(0, 0, SpriteIndex.bow_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_run.png"), 50, 2);
             run.setCollisionBox(19, 9, 12, 26);
-            jump = new Sprite(0, 0, SpriteIndex.bow_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_jump.png"), 50, 2);
+            jump = new Sprite(0, 0, SpriteIndex.bow_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_jump.png"), 50, 2);
             jump.setCollisionBox(19, 9, 12, 26);
-            swing = new Sprite(0, 0, SpriteIndex.bow_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_swing.png"), 50, 2);
+            swing = new Sprite(0, 0, SpriteIndex.bow_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_swing.png"), 50, 2);
             swing.setCollisionBox(19, 9, 12, 26);
-            jumpSwing = new Sprite(0, 0, SpriteIndex.bow_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_jump_swing.png"), 50, 2);
+            jumpSwing = new Sprite(0, 0, SpriteIndex.bow_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_jump_swing.png"), 50, 2);
             jumpSwing.setCollisionBox(19, 9, 12, 26);
-            runSwing = new Sprite(0, 0, SpriteIndex.bow_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/bowman_run_swing.png"), 50, 2);
+            runSwing = new Sprite(0, 0, SpriteIndex.bow_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/bowman_run_swing.png"), 50, 2);
             runSwing.setCollisionBox(19, 9, 12, 26);
 
             weaponChargeLimit = 40;

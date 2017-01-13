@@ -16,17 +16,17 @@ namespace MultiplayerLib.GameClasses
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            stand = new Sprite(0, 0, SpriteIndex.kni_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_standing.png"), 56, 2);
+            stand = new Sprite(0, 0, SpriteIndex.kni_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_standing.png"), 56, 2);
             stand.setCollisionBox(22, 14, 12, 26);
-            run = new Sprite(0, 0, SpriteIndex.kni_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_run.png"), 56, 2);
+            run = new Sprite(0, 0, SpriteIndex.kni_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_run.png"), 56, 2);
             run.setCollisionBox(22, 14, 12, 26);
-            jump = new Sprite(0, 0, SpriteIndex.kni_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_jump.png"), 56, 2);
+            jump = new Sprite(0, 0, SpriteIndex.kni_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_jump.png"), 56, 2);
             jump.setCollisionBox(22, 14, 12, 26);
-            swing = new Sprite(0, 0, SpriteIndex.kni_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_swing.png"), 56, 2);
+            swing = new Sprite(0, 0, SpriteIndex.kni_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_swing.png"), 56, 2);
             swing.setCollisionBox(22, 14, 12, 26);
-            jumpSwing = new Sprite(0, 0, SpriteIndex.kni_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_jump_swing.png"), 56, 2);
+            jumpSwing = new Sprite(0, 0, SpriteIndex.kni_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_jump_swing.png"), 56, 2);
             jumpSwing.setCollisionBox(22, 14, 12, 26);
-            runSwing = new Sprite(0, 0, SpriteIndex.kni_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knight_run_swing.png"), 56, 2);
+            runSwing = new Sprite(0, 0, SpriteIndex.kni_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knight_run_swing.png"), 56, 2);
             runSwing.setCollisionBox(22, 14, 12, 26);
 
             weaponChargeLimit = 35;

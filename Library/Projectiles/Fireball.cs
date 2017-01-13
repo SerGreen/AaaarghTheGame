@@ -18,7 +18,7 @@ namespace MultiplayerLib.Projectiles
             : base(x, y, face, damage, team, ownerID, lifetime, vx, vy, 0)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Fireball, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/fireball.png"), 32, scale);
+            sprite = new Sprite(x, y, SpriteIndex.Fireball, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/fireball.png"), 32, scale);
             sprite.setCollisionBox(3, 3, 10, 10);
 
             animationSlowdown = 0;

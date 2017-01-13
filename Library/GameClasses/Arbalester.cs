@@ -23,25 +23,25 @@ namespace MultiplayerLib.GameClasses
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            stand = new Sprite(0, 0, SpriteIndex.arb_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_standing.png"), 50, 2);
+            stand = new Sprite(0, 0, SpriteIndex.arb_Stand, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_standing.png"), 50, 2);
             stand.setCollisionBox(19, 9, 12, 26);
-            run = new Sprite(0, 0, SpriteIndex.arb_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_run.png"), 50, 2);
+            run = new Sprite(0, 0, SpriteIndex.arb_Run, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_run.png"), 50, 2);
             run.setCollisionBox(19, 9, 12, 26);
-            jump = new Sprite(0, 0, SpriteIndex.arb_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_jump.png"), 50, 2);
+            jump = new Sprite(0, 0, SpriteIndex.arb_Jump, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_jump.png"), 50, 2);
             jump.setCollisionBox(19, 9, 12, 26);
-            swing = new Sprite(0, 0, SpriteIndex.arb_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_swing.png"), 50, 2);
+            swing = new Sprite(0, 0, SpriteIndex.arb_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_swing.png"), 50, 2);
             swing.setCollisionBox(19, 9, 12, 26);
-            jumpSwing = new Sprite(0, 0, SpriteIndex.arb_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_jump_swing.png"), 50, 2);
+            jumpSwing = new Sprite(0, 0, SpriteIndex.arb_Jump_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_jump_swing.png"), 50, 2);
             jumpSwing.setCollisionBox(19, 9, 12, 26);
-            runSwing = new Sprite(0, 0, SpriteIndex.arb_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_run_swing.png"), 50, 2);
+            runSwing = new Sprite(0, 0, SpriteIndex.arb_Run_Swing, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_run_swing.png"), 50, 2);
             runSwing.setCollisionBox(19, 9, 12, 26);
-            smack = new Sprite(0, 0, SpriteIndex.arb_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_smack.png"), 50, 2);
+            smack = new Sprite(0, 0, SpriteIndex.arb_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_smack.png"), 50, 2);
             smack.setCollisionBox(19, 9, 12, 26);
-            jumpSmack = new Sprite(0, 0, SpriteIndex.arb_Jump_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_jump_smack.png"), 50, 2);
+            jumpSmack = new Sprite(0, 0, SpriteIndex.arb_Jump_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_jump_smack.png"), 50, 2);
             jumpSmack.setCollisionBox(19, 9, 12, 26);
-            runSmack = new Sprite(0, 0, SpriteIndex.arb_Run_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_run_smack.png"), 50, 2);
+            runSmack = new Sprite(0, 0, SpriteIndex.arb_Run_Smack, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_run_smack.png"), 50, 2);
             runSmack.setCollisionBox(19, 9, 12, 26);
-            reload = new Sprite(0, 0, SpriteIndex.arb_Reload, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/arbalester_reload.png"), 50, 2);
+            reload = new Sprite(0, 0, SpriteIndex.arb_Reload, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/arbalester_reload.png"), 50, 2);
             reload.setCollisionBox(19, 9, 12, 26);
 
             weaponChargeLimit = 45;

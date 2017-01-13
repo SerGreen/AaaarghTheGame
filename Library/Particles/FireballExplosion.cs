@@ -14,7 +14,7 @@ namespace MultiplayerLib.Particles
             : base(0, 0, face, 300, 2)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Fireball_Explosion, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/fireball_explosion.png"), 40, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Fireball_Explosion, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/fireball_explosion.png"), 40, 1);
             sprite.y -= sprite.Height / 2;
         }
     }

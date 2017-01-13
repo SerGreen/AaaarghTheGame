@@ -21,7 +21,7 @@ namespace MultiplayerLib
             : base(0.5f)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Skull, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/skulls.png"), 20, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Skull, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/skulls.png"), 20, 1);
             sprite.setFrame(team);
             this.vx = vx;
             this.vy = vy;

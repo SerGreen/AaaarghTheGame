@@ -15,7 +15,7 @@ namespace MultiplayerLib
             : base(x, y, face, damage, team, ownerID, lifetime)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Slash_Dagger, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/slash_dagger.png"), 15, 2);
+            sprite = new Sprite(x, y, SpriteIndex.Slash_Dagger, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/slash_dagger.png"), 15, 2);
         }
     }
 }

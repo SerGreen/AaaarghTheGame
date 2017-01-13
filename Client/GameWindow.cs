@@ -96,7 +96,7 @@ namespace Client
             myPlayerID = -1;
             playerTeam = -1;
             name = "player_" + new Random().Next(0, 1000);
-            //loadTileset((Bitmap)Bitmap.FromFile(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/res/tileset.png"), 16);
+            //loadTileset((Bitmap)Bitmap.FromFile(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "/../res/tileset.png"), 16);
             loadSprites();
             loadedMapName = "//NONE//";
             //loadTilemap();
@@ -105,9 +105,9 @@ namespace Client
             ChannelServices.RegisterChannel(channel, false);
 
             camera = new Rectangle(-427, -240, 854, 480);
-            drake = new Sprite(0, 0, (Bitmap)Bitmap.FromFile(currentLoc + "/res/drake.png"), 50, 2);
-            glasses = new Sprite(0, 0, (Bitmap)Bitmap.FromFile(currentLoc + "/res/glasses.png"), 50, 2);
-            crown = new Sprite(0, 0, SpriteIndex.Crown, (Bitmap)Bitmap.FromFile(currentLoc + "/res/crown.png"), 15, 2);
+            drake = new Sprite(0, 0, (Bitmap)Bitmap.FromFile(currentLoc + "/../res/drake.png"), 50, 2);
+            glasses = new Sprite(0, 0, (Bitmap)Bitmap.FromFile(currentLoc + "/../res/glasses.png"), 50, 2);
+            crown = new Sprite(0, 0, SpriteIndex.Crown, (Bitmap)Bitmap.FromFile(currentLoc + "/../res/crown.png"), 15, 2);
             showScoreboard = false;
             initTeamColors();
             initMenu(currentLoc);
@@ -168,105 +168,105 @@ namespace Client
             sprites = new List<Bitmap>();
             string currentLoc = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arrow.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/slash.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/slash_axe.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/slash_dagger.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bolt.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/melon.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/melon_crack.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knife.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalest_smash.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/fireball.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arrow.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/slash.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/slash_axe.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/slash_dagger.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bolt.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/melon.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/melon_crack.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knife.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalest_smash.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/fireball.png"));
             
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/dust.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/blood_arrow.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/blood_slash.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/+1.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/+2.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/-1.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/fireball_explosion.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/explosion.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/fire.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/dust.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/blood_arrow.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/blood_slash.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/+1.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/+2.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/-1.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/fireball_explosion.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/explosion.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/fire.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/domination_plates.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/flag.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/flag_place.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/crown.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/skulls.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/skulls_front.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/statue.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/tombstone.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/tombstone_crush.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/domination_plates.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/flag.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/flag_place.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/crown.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/skulls.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/skulls_front.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/statue.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/tombstone.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/tombstone_crush.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/warrior_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/warrior_run_swing.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/berserker_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/berserker_run_swing.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_run_swing.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_run_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_reload.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_smack.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_run_smack.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/arbalester_jump_smack.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_reload.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_smack.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_run_smack.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/arbalester_jump_smack.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/knight_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/knight_run_swing.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_run_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_throw.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_jump_throw.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/thief_run_throw.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_throw.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_jump_throw.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/thief_run_throw.png"));
 
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_standing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_run.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_jump.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_jump_swing.png"));
-            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/mage_run_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_standing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_run.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_jump.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_jump_swing.png"));
+            sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/mage_run_swing.png"));
 
-            //sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/res/bowman_charge.png"));
+            //sprites.Add((Bitmap)Bitmap.FromFile(currentLoc + "/../res/bowman_charge.png"));
 
-            teammateArrow = (Bitmap)Bitmap.FromFile(currentLoc + "/res/teammate.png");
-            meArrow = (Bitmap)Bitmap.FromFile(currentLoc + "/res/me.png");
-            //backgroundDead = (Bitmap)Bitmap.FromFile(currentLoc + "/res/background_dead.png");
-            blackFade = (Bitmap)Bitmap.FromFile(currentLoc + "/res/black_fade.png");
-            redFade = (Bitmap)Bitmap.FromFile(currentLoc + "/res/red_fade_blood.png");
+            teammateArrow = (Bitmap)Bitmap.FromFile(currentLoc + "/../res/teammate.png");
+            meArrow = (Bitmap)Bitmap.FromFile(currentLoc + "/../res/me.png");
+            //backgroundDead = (Bitmap)Bitmap.FromFile(currentLoc + "/../res/background_dead.png");
+            blackFade = (Bitmap)Bitmap.FromFile(currentLoc + "/../res/black_fade.png");
+            redFade = (Bitmap)Bitmap.FromFile(currentLoc + "/../res/red_fade_blood.png");
         }
 
         private void loadBackground(int index, string assemblyFolderPath)
         {
-            background = (Bitmap)Bitmap.FromFile(assemblyFolderPath + "/res/background_" + index + ".png");
+            background = (Bitmap)Bitmap.FromFile(assemblyFolderPath + "/../res/background_" + index + ".png");
             createDeadBackground();
             screen.BackColor = background.GetPixel(0, 0);
         }
@@ -299,10 +299,10 @@ namespace Client
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-            if (File.Exists(assemblyFolder + "/res/maps/" + mapName + ".tiles"))
+            if (File.Exists(assemblyFolder + "/../res/maps/" + mapName + ".tiles"))
             {
                 //load client data
-                StreamReader sr = new StreamReader(assemblyFolder + "/res/maps/" + mapName + ".tiles");
+                StreamReader sr = new StreamReader(assemblyFolder + "/../res/maps/" + mapName + ".tiles");
                 string file = sr.ReadToEnd();
                 sr.Close();
 
@@ -313,7 +313,7 @@ namespace Client
                 int tileY = int.Parse(tileDat[0].Split(':')[1]);
 
                 //load tiles data
-                tilemap = new Tilemap(tileX, tileY, 16, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/tileset.png"));
+                tilemap = new Tilemap(tileX, tileY, 16, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/tileset.png"));
                 string[] tileRows = tileDat[1].Split('\n');
                 for (int j = 0; j < tileRows.Length; j++)
                 {

@@ -17,7 +17,7 @@ namespace MultiplayerLib.Projectiles
             : base(x, y, face, damage, team, ownerID, lifetime, vx, vy, gravity)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Knife, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/knife.png"), 16, 2);
+            sprite = new Sprite(x, y, SpriteIndex.Knife, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/knife.png"), 16, 2);
             sprite.setCollisionBox(3, 3, 10, 10);
 
             animationSlowdown = 0;

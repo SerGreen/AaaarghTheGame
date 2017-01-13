@@ -59,17 +59,17 @@ namespace MultiplayerLib
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             int spriteIndexShift = 4;
 
-            stand = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 0), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_standing.png"), 50, 2);
+            stand = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 0), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_standing.png"), 50, 2);
             stand.setCollisionBox(19, 9, 12, 26);
-            run = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 1), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_run.png"), 50, 2);
+            run = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 1), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_run.png"), 50, 2);
             run.setCollisionBox(19, 9, 12, 26);
-            jump = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 2), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_jump.png"), 50, 2);
+            jump = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 2), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_jump.png"), 50, 2);
             jump.setCollisionBox(19, 9, 12, 26);
-            swing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 3), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_swing.png"), 50, 2);
+            swing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 3), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_swing.png"), 50, 2);
             swing.setCollisionBox(19, 9, 12, 26);
-            jumpSwing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 4), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_jump_swing.png"), 50, 2);
+            jumpSwing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 4), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_jump_swing.png"), 50, 2);
             jumpSwing.setCollisionBox(19, 9, 12, 26);
-            runSwing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 5), (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/" + gameClassPath[(int)gameClass] + "_run_swing.png"), 50, 2);
+            runSwing = new Sprite(0, 0, (SpriteIndex)(spriteIndexShift + (int)gameClass * 6 + 5), (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/" + gameClassPath[(int)gameClass] + "_run_swing.png"), 50, 2);
             runSwing.setCollisionBox(19, 9, 12, 26);
 
             sprite = stand;

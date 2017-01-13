@@ -19,7 +19,7 @@ namespace MultiplayerLib
         public FlagPlace(float x, float y, int team)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.FlagPlace, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/flag_place.png"), 16, 2);
+            sprite = new Sprite(x, y, SpriteIndex.FlagPlace, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/flag_place.png"), 16, 2);
             this.team = team;
             flag = new Flag(x + 4, y - 56, team);
             FlagOnPlace = true;

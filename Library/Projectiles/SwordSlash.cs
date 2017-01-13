@@ -15,7 +15,7 @@ namespace MultiplayerLib
             : base(x, y, face, damage, team, ownerID, lifetime)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/slash.png"), 22, 2);
+            sprite = new Sprite(x, y, SpriteIndex.Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/slash.png"), 22, 2);
             sprite.setCollisionBox(0, 2, 22, 17);
         }
     }

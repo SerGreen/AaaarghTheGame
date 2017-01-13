@@ -14,7 +14,7 @@ namespace MultiplayerLib.Particles
             : base(0, 0, 1, 300, 1)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Tombstone_crush, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/tombstone_crush.png"), 26, 1);
+            sprite = new Sprite(x, y, SpriteIndex.Tombstone_crush, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/tombstone_crush.png"), 26, 1);
             sprite.setCollisionBox(8, 28, 10, 4);
         }
     }

@@ -15,7 +15,7 @@ namespace MultiplayerLib.Particles
             : base(vx, vy, face, lifetime, 2)
         {
             string assemblyFolder = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            sprite = new Sprite(x, y, SpriteIndex.Blood_Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/res/blood_slash.png"), 32, 2);
+            sprite = new Sprite(x, y, SpriteIndex.Blood_Slash, (Bitmap)Bitmap.FromFile(assemblyFolder + "/../res/blood_slash.png"), 32, 2);
         }
     }
 }
