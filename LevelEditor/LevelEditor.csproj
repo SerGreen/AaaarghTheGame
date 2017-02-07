@@ -92,6 +92,12 @@
   <ItemGroup>
     <None Include="Resources\tileset.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Library\MultiplayerLib.csproj">
+      <Project>{24ac523d-4b2f-4b0f-8e95-be1e1e343dd3}</Project>
+      <Name>MultiplayerLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
