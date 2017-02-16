@@ -2,9 +2,9 @@
 This is an old university project. Task was to make some cleint/server app that uses ADO.NET, so i made this game.
 It is 2D medieval themed multiplayer slasher game. 
 
-[View full animation on Gfycat](gfycat.link)
+[View full animation on Gfycat](https://gfycat.com/ImpureEasyBoubou)
 
-[![Demo Aaaargh](short.gif.link)](gfycat.link)
+[![Demo Aaaargh](https://giant.gfycat.com/ClutteredInsecureHoneyeater.gif)](https://gfycat.com/ImpureEasyBoubou)
 
 ## About the game
 * The game is for 2 to 12 players
