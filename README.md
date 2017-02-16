@@ -1,9 +1,8 @@
 # Aaaargh! the game
 This is an old university project. Task was to make some cleint/server app that uses ADO.NET, so i made this game.
-It is 2D medieval themed multiplayer slasher game. 
+It is 2D medieval themed multiplayer slasher game. It is made from scratch, without use of any game engine.
 
-[View full animation on Gfycat](https://gfycat.com/ImpureEasyBoubou)
-
+[View full animation on Gfycat](https://gfycat.com/ImpureEasyBoubou)  
 [![Demo Aaaargh](https://giant.gfycat.com/ClutteredInsecureHoneyeater.gif)](https://gfycat.com/ImpureEasyBoubou)
 
 ## About the game
