@@ -7,7 +7,7 @@ It is 2D medieval themed multiplayer slasher game.
 [![Demo Aaaargh](https://giant.gfycat.com/ClutteredInsecureHoneyeater.gif)](https://gfycat.com/ImpureEasyBoubou)
 
 ## About the game
-* The game is for 2 to 12 players
+* The game is for 2 to 8 players
 * Goal is to kill enemy players and achieve game mode objective
 * 2 or 4 teams
 * 6 playable classes
